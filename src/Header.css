@@ -1,0 +1,32 @@
+@import "./vars.css";
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(214, 209, 209);
+    background-color: inherit;
+}
+
+.skip-link {
+    left: 15%;
+    position: absolute;
+    rotate: x 90deg;
+}
+
+.skip-link:focus {
+    rotate: x 0deg;
+}
+
+.header__logo {
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.header__logo:hover {
+    color: var(--color-secondary);
+}
