@@ -1,0 +1,7 @@
+.message-box {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    max-width: 15rem;
+    line-height: 1.5rem;
+}
