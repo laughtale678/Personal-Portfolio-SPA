@@ -10,7 +10,7 @@ function HomePage({ setPage }) {
                     analytical abilities, problem-solving skills, and passion for creating innovative software solutions.</p>
                 <a className='home__button' href="#" onClick={(e) => { e.preventDefault(); setPage('AboutPage'); }}>About Me</a>
             </div>
-            <img className='home__image' src='/home.png' alt="Rui Lu in the mountain" />
+            <img className='home__image' src='./home.png' alt="Rui Lu in the mountain" />
         </div>
     );
 }

@@ -67,7 +67,7 @@ function AboutPage() {
         <div className='about'>
             <h1 className='about__title'>About</h1>
             <div className='about__content'>
-                <img className='about__img' src="/about.png" alt="northeastern seattle campus" />
+                <img className='about__img' src="./about.png" alt="northeastern seattle campus" />
                 <div className='about__main'>
                     <div className='about__tab' aria-label='tablist' >
                         <Button aria='educationTab' className={`about__button ${content === 'education' ? 'active' : ''}`} onClick={() => setContent('education')}>Education</Button>

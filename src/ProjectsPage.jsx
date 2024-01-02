@@ -35,21 +35,21 @@ function ProjectsPage() {
 
             <Card
                 title='Food-Ordering'
-                pic='/project1.png'
+                pic='./project1.png'
                 alt='food ordering system order food page'
                 text='Nationwide vaccine inventory management and distribution system built in Java.'
                 go={() => projectRef1.current.showModal()}
             />
             <Card
                 title='Vaccine-Distribution'
-                pic='/project2.png'
+                pic='./project2.png'
                 alt='Vaccine-Distribution-System admin page'
                 text='Python-based system for businesses to place orders and manage all sales data.'
                 go={() => projectRef2.current.showModal()}
             />
             <Card
                 title='Personal-Website'
-                pic='/project3.png'
+                pic='./project3.png'
                 alt='Personal Website home page'
                 text='React-based personal website to introduce background, experiences and projects'
                 go={() => projectRef3.current.showModal()}
