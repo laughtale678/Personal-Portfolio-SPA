@@ -9,14 +9,14 @@ function AboutPage() {
         return (
             <>
                 <div>
-                    <p className='experience__title'>Master of Computer Software Engineering</p>
-                    <p>Northeastern University, Seattle, WA</p>
+                    <p className='experience__title'>Northeastern University|Seattle, WA</p>
+                    <p>Master of Computer Software Engineering</p>
                     <p>2023.01 - Expected 2025.05</p>
 
                 </div>
                 <div>
-                    <p className='experience__title'>Bachelor of Science in Economics</p>
-                    <p>Nanjing Audit University, Nanjing, China</p>
+                    <p className='experience__title'>Nanjing Audit University|Nanjing, China</p>
+                    <p>Bachelor of Science in Economics</p>
                 </div>
 
             </>
@@ -46,15 +46,15 @@ function AboutPage() {
             <>
                 <div>
                     <p className='experience__title'>Languages:</p>
-                    <p>Java, JavaScript, Python, HTML, CSS.</p>
+                    <p>Java, JavaScript, Python, HTML5, CSS3.</p>
                 </div>
                 <div>
                     <p className='experience__title'>Libraries and Tools: </p>
-                    <p>React, Spring Boot, Pandas, Matplotlib.</p>
+                    <p>React, Spring Boot, Node.js, Express.js, Redux, Tailwind CSS, Java Swing.</p>
                 </div>
                 <div>
                     <p className='experience__title'>Tools:</p>
-                    <p> Git, GitHub.</p>
+                    <p>Git, GitHub, MongoDB.</p>
 
                 </div>
 
