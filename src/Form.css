@@ -1,57 +1,52 @@
 .form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    font-size: 1.3rem;
-    line-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 
 .form__label {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .required {
-    font-size: 0.8rem;
-    margin-left: 0.5rem;
-    color: red;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  color: red;
 }
 
 .missingMessage {
-    font-size: 0.8rem;
-    color: red;
+  font-size: 0.8rem;
+  color: red;
 }
 
 .form__message {
-    height: 4rem;
+  height: 4rem;
 }
 
 .form__button {
-    background-color: var(--color-primary);
-    border-radius: 1rem;
-    padding: 0.5rem 1rem;
-    text-align: center;
+  font-weight: 600;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  background-color: white;
+}
+
+.form__button:hover {
+    background-color: rgb(53, 53, 53);
     color: white;
-    border: 0px;
-    font-size: 1rem;
-    margin: 0rem 0.5rem;
-    cursor: pointer;
 }
-
-.form__button:hover,
-.form__button:focus {
-    background-color: var(--color-secondary);
-}
-
 
 @media (mid-width: 44rem) {
+  .form__label {
+    flex-direction: row;
+  }
 
-    .form__label {
-        flex-direction: row;
-    }
-
-    .form {
-        margin-left: 2rem;
-    }
-
+  .form {
+    margin-left: 2rem;
+  }
 }

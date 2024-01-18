@@ -1,89 +1,34 @@
-import './AboutPage.css';
-import Button from './Button'
-import { useState } from 'react';
+import "./AboutPage.css";
 
 function AboutPage() {
-    const [content, setContent] = useState('education');
-
-    function Education() {
-        return (
-            <>
-                <div>
-                    <p className='experience__title'>Northeastern University|Seattle, WA</p>
-                    <p>Master of Computer Software Engineering</p>
-                    <p>2023.01 - Expected 2025.05</p>
-
-                </div>
-                <div>
-                    <p className='experience__title'>Nanjing Audit University|Nanjing, China</p>
-                    <p>Bachelor of Science in Economics</p>
-                </div>
-
-            </>
-
-        );
-    }
-
-    function Work() {
-        return (
-            <>
-                <div>
-                    <p className='experience__title'>Jiangsu Jiangnan Rural Commercial Bank</p>
-                    <p>Product Manager</p>
-                    <p>2021.06 - 2022.12</p>
-                </div>
-                <div>
-                    <p className='experience__title'>Jiangsu Jiangnan Rural Commercial Bank</p>
-                    <p>Customer Manager</p>
-                    <p>2016.01-2021.05</p>
-                </div>
-
-            </>
-        );
-    }
-    function Skills() {
-        return (
-            <>
-                <div>
-                    <p className='experience__title'>Languages:</p>
-                    <p>Java, JavaScript, Python, HTML5, CSS3.</p>
-                </div>
-                <div>
-                    <p className='experience__title'>Libraries and Tools: </p>
-                    <p>React, Spring Boot, Node.js, Express.js, Redux, Tailwind CSS, Java Swing.</p>
-                </div>
-                <div>
-                    <p className='experience__title'>Tools:</p>
-                    <p>Git, GitHub, MongoDB.</p>
-
-                </div>
-
-            </>
-        );
-    }
-
-
-    return (
-        <div className='about'>
-            <h1 className='about__title'>About</h1>
-            <div className='about__content'>
-                <img className='about__img' src="./about.png" alt="northeastern seattle campus" />
-                <div className='about__main'>
-                    <div className='about__tab' aria-label='tablist' >
-                        <Button aria='educationTab' className={`about__button ${content === 'education' ? 'active' : ''}`} onClick={() => setContent('education')}>Education</Button>
-                        <Button aria='workTab' className={`about__button ${content === 'work' ? 'active' : ''}`} onClick={() => setContent('work')}>Work</Button>
-                        <Button aria='skillsTab' className={`about__button ${content === 'skills' ? 'active' : ''}`} onClick={() => setContent('skills')}>Skills</Button>
-                    </div>
-                    <div className='about__experience'>
-                        {content == 'education' && <Education />}
-                        {content == 'work' && <Work />}
-                        {content == 'skills' && <Skills />}
-                    </div>
-
-                </div>
-
-            </div>
+  return (
+    <div className="about">
+      <h1 className="title">About Me</h1>
+      <div className="about__content">
+        <div className="about__pic-container">
+          <img src="about.png" alt="Profile picture" className="about-pic" />
         </div>
-    );
+        <div className="text-container">
+          <p className="about__text">
+            Computer Software Engineering graduate student at Northeastern
+            University with a background as a product manager in the banking
+            industry. Experienced in agile development methodologies and
+            collaborations with cross-functional teams. Pursuing opportunities
+            as a Software Engineer to continue professional growth and apply
+            strong analytical abilities, problem-solving skills, and passion for
+            creating innovative software solutions.
+          </p>
+          <p className="about__skills">
+            <strong>Technical Skills:</strong> 
+          </p>
+          <ul className="skills">
+              <li><strong>Languages: </strong>Java, JavaScript, Python, HTML5, CSS3, SQL.</li>
+              <li><strong>Frameworks&Libraries: </strong> React, Spring Boot, Node.js, Express.js, Redux, Tailwind CSS, Java Swing.</li>
+              <li><strong>Tools: </strong> Git, GitHub, MongoDB, MySQL, AWS.</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  );
 }
 export default AboutPage;

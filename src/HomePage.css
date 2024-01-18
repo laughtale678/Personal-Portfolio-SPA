@@ -1,58 +1,119 @@
-@import './vars.css';
-
 .home {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
 }
 
 .home__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  align-self: center;
+  text-align: center;
 }
-
-.home__title {
-    margin-bottom: 0rem;
+.home__name {
+  font-size: 3rem;
+  text-align: center;
 }
 
 .home__text {
-    padding: 1.5rem;
-    line-height: 1.5rem;
-    margin: 0rem;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
 }
 
-.home__button {
-    text-decoration: none;
-    background-color: var(--color-primary);
-    border-radius: 1rem;
-    padding: 1rem;
-    text-align: center;
-    color: white;
-}
-
-.home__button:hover {
-    background-color: var(--color-secondary);
+.home__image-container {
+  display: flex;
+  height: 250px;
+  width: 250px;
 }
 
 .home__image {
-    width: 250px;
-    height: 250px;
-    margin: 0rem 2rem 2rem 2rem;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+.btn-color-1{
+  text-decoration: none;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+.socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.socials-icon {
+  cursor: pointer;
+  height: 2rem;
 }
 
 @media (min-width: 44rem) {
-    .home {
-        flex-direction: row;
-        align-items: normal;
-    }
+  .home {
+    flex-direction: row;
+    align-items: normal;
+  }
 
-    .home__image {
-        width: 300px;
-        height: 300px;
-        margin-top: 10rem;
-    }
+  .home__image-container {
+    height: 300px;
+    width: 300px;
+  }
+
+  .home__image-container {
+    margin: auto 2rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  .home__image-container {
+    height: 400px;
+    width: 400px;
+  }
 }

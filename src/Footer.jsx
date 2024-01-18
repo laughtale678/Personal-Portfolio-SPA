@@ -2,7 +2,7 @@ import './Footer.css';
 function Footer() {
     return (
         <footer className='footer'>
-            ©ruilu. All right reserved
+            Copyright &#169; Rui Lu. All Rights Reserved.
         </footer>
     );
 }

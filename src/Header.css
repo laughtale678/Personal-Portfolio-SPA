@@ -1,31 +1,32 @@
-@import "./vars.css";
-
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid rgb(214, 209, 209);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem;
 }
 
 .skip-link {
-    left: 15%;
-    position: absolute;
-    rotate: x 90deg;
+  left: 15%;
+  position: absolute;
+  rotate: x 90deg;
 }
 
 .skip-link:focus {
-    rotate: x 0deg;
+  rotate: x 0deg;
 }
 
 .header__logo {
-    text-decoration: none;
-    margin: 1rem;
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: var(--color-primary);
+  text-decoration: none;
+  margin: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: black;
 }
 
 .header__logo:hover {
-    color: var(--color-secondary);
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
 }

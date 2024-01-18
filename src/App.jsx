@@ -6,21 +6,20 @@ import Contactpage from './ContactPage';
 import ProjectsPage from './ProjectsPage';
 import AboutPage from './AboutPage';
 import Footer from './Footer';
-
+import ExperiencePage from './ExperiencePage';
 
 function App() {
   const [page, setPage] = useState('HomePage');
-  const [mode, setMode] = useState('');
 
   return (
-    <div className={`app ${mode}`}>
-      <Header setPage={setPage} mode={mode} setMode={setMode} />
+    <div className='app'>
+      <Header setPage={setPage}/>
       <div id='main'>
         {(page === 'HomePage') && <HomePage setPage={setPage} />}
-        {(page === 'ContactPage') && <Contactpage />}
-        {(page === 'ProjectsPage') && <ProjectsPage />}
         {(page === 'AboutPage') && <AboutPage />}
-
+        {(page === 'ExperiencePage') && <ExperiencePage />}
+        {(page === 'ProjectsPage') && <ProjectsPage />}
+        {(page === 'ContactPage') && <Contactpage />}
       </div>
       <Footer />
 
