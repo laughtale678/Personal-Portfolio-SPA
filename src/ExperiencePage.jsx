@@ -75,7 +75,9 @@ function ExperiencePage() {
           <p className="experience__title">
             Jiangsu Jiangnan Rural Commercial Bank
           </p>
+          <br />
           <p>Customer Manager</p>
+          <br />
           <p>2016.01-2021.05</p>
         </div>
       </>
