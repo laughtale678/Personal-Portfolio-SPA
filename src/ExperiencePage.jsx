@@ -24,9 +24,7 @@ function ExperiencePage() {
             Program Structure and Algorithms, Web Development Tools and Methods.
           </p>
           <br />
-          <p>
-          Certifications: AWS Certified Cloud Practitioner
-          </p>
+          <p>Certifications: AWS Certified Cloud Practitioner</p>
         </div>
         <div className="education">
           <p className="experience__title">
@@ -66,12 +64,17 @@ function ExperiencePage() {
               collaborating with cross-functional teams.
             </li>
             <li>
-              Tested and debugged features with the QA team to troubleshoot
-              issues, ensuring the delivery of high-quality software.
+              Optimized user experience through creative problem-solving,
+              complemented by effective communication with a variety of
+              partners.
+            </li>
+            <li>
+              Tested and troubleshot issues with the quality assurance team to
+              ensure the delivery of high-quality software.
             </li>
           </ul>
         </div>
-        <div className="work">
+        {/* <div className="work">
           <p className="experience__title">
             Jiangsu Jiangnan Rural Commercial Bank
           </p>
@@ -79,7 +82,7 @@ function ExperiencePage() {
           <p>Customer Manager</p>
           <br />
           <p>2016.01-2021.05</p>
-        </div>
+        </div> */}
       </>
     );
   }
