@@ -26,6 +26,15 @@ function GlobalNav({ setPage }) {
         className={`menu ${showMenuClass}`}
         onClick={() => setShowMenu(false)}
       >
+         <li className="menu__item">
+          <a
+            className="menu__link"
+            href="#"
+            onClick={(e) => go(e, "HomePage")}
+          >
+            Home
+          </a>
+        </li>
         <li className="menu__item">
           <a
             className="menu__link"

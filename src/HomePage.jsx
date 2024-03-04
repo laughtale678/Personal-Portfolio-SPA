@@ -15,7 +15,7 @@ function HomePage({ setPage }) {
         <h1 className="home__name">Rui Lu</h1>
         <p className="home__text">Full Stack Developer</p>
         <div className="btn-container">
-          <button className="btn btn-color-2" onClick={() => window.location.href = 'Resume.pdf'}>Download CV</button>
+          {/* <button className="btn btn-color-2" onClick={() => window.location.href = 'Resume.pdf'}>Download CV</button> */}
           <a className="btn btn-color-1" href="#" onClick={(e) => { e.preventDefault(); setPage('AboutPage'); }}>About me</a>
         </div>
         <div className="socials-container">
